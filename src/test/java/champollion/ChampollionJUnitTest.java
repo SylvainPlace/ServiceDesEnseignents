@@ -45,7 +45,7 @@ public class ChampollionJUnitTest {
         untel.ajouteEnseignement(uml, 0, 10, 0);
 
         assertEquals(0, untel.heuresPrevuesPourUE(java),
-                "L'enseignant doit maintenant avoir 10 heures prévues pour l'UE 'uml'");
+                "L'enseignant doit avoir aucune heure prévue pour l'UE 'java'");
     }
 
     @Test
