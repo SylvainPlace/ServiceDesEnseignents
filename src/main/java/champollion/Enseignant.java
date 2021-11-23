@@ -9,7 +9,6 @@ public class Enseignant extends Personne {
     private ArrayList<Intervention> lesIntervention;
     public static final int HEURESSERVICE = 192;
 
-    // TODO : rajouter les autres méthodes présentes dans le diagramme UML
     public Enseignant(String nom, String email) {
         super(nom, email);
         lesServicePrevu = new HashMap<>();
@@ -108,6 +107,12 @@ public class Enseignant extends Personne {
         return heures;
     }
 
+    /**
+     * On veut pouvoir connaître les enseignants en sous-service : le service
+     * normal d’un enseignant est de 192h « équivalent TD »,
+     *
+     * @return si un enseignant en sous service
+     */
     public boolean enSousService() {
         return (heuresPrevues() < HEURESSERVICE);
 
