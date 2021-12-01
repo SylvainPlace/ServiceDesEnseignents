@@ -1,6 +1,5 @@
 package champollion;
 
-import java.text.DateFormat;
 import java.util.Date;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
